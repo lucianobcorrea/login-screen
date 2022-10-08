@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/login.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <form id="form-login" action="/" method="GET">
+        <div class="container">
+            <div class="box-login" id="box-login">
+                <div id="error-login" class="error"></div>
+                <div class="campo">
+                    <label>Email</label>
+                    <div>
+                        <input type="email" name="email" id="email-login" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Password</label>
+                    <div>
+                        <input type="password" name="password" id="password-login" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="bt">
+                        Sign in
+                    </button>
+                </div>
+                <div>
+                    <p class="message" onclick="showRegisterBox()">Not registered? <a href="#">Create an account</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form id="form-register" action="/" method="GET">
+        <div class="container">
+            <div class="box-register" id="box-register">
+                <div id="error-register" class="error"></div>
+                <div class="campo">
+                    <label>Name</label>
+                    <div>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Surname</label>
+                    <div>
+                        <input type="text" name="surname" id="surname" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Birthday Date</label>
+                    <div>
+                        <label class="hint">DD/MM/YYYY</label>
+                        <input type="text" name="date" id="date"
+                        onfocus="(this.type='date')" onblur="(this.type='text')"  min="1997-01-01" max="2022-12-31" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Email</label>
+                    <div>
+                        <input type="email" name="email" id="email-register" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Password</label>
+                    <div>
+                        <label class="hint">Must have at leat 6 characters and less than 20</label>
+                        <input type="password" name="password" id="password-register" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="bt">
+                        Register
+                    </button>
+                </div>
+                <div>
+                    <p class="message" onclick="showLoginBox()">Already registered? <a href="#">Login in<a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
