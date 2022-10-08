@@ -2,6 +2,6 @@
 A simple login screen to test some stuff, like css animations, and a little bit of form validation with JavaScript.
 
 #Login Screen
-<img src="Login.png" width="300" />
+<p><img src="Login.png" width="300" /></p>
 #Register Screen
-<img src="Register.png" width="300" />
+<p><img src="Register.png" width="300" /></p>
